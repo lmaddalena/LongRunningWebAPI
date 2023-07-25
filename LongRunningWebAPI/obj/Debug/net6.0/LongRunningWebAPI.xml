@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LongRunningWebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:LongRunningWebAPI.Controllers.OrdersController">
+            <summary>
+            Manage Orders
+            </summary>
+        </member>
+        <member name="M:LongRunningWebAPI.Controllers.OrdersController.#ctor(Microsoft.Extensions.Logging.ILogger{LongRunningWebAPI.Controllers.OrdersController},LongRunningWebAPI.Services.ProcessOrderService)">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:LongRunningWebAPI.Controllers.OrdersController.Post(System.String)">
+            <summary>
+            Process order
+            </summary>
+            <param name="orderId">Order Id to be processed</param>
+            <remarks>
+            Sample Request:
+            
+                POST api/orders/process
+                {
+                    "orderId": "xyz123"
+                }
+                
+            </remarks>
+            <response code="200">Order processing is started</response>
+            <response code="400">OrderId is null</response>
+            <response code="404">Order Not Found</response>
+        </member>
+        <member name="T:LongRunningWebAPI.Controllers.WeatherForecastController">
+            <summary>
+            Weather Forecast
+            </summary>
+        </member>
+        <member name="M:LongRunningWebAPI.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{LongRunningWebAPI.Controllers.WeatherForecastController})">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:LongRunningWebAPI.Controllers.WeatherForecastController.Get">
+            <summary>
+            Get Weather Forecast
+            </summary>
+        </member>
+        <member name="T:LongRunningWebAPI.WeatherForecast">
+            <summary>
+            WeatherForecast
+            </summary>
+        </member>
+        <member name="P:LongRunningWebAPI.WeatherForecast.Date">
+            <summary>
+            Forecast Date
+            </summary>
+        </member>
+        <member name="P:LongRunningWebAPI.WeatherForecast.TemperatureC">
+            <summary>
+            Temperature in C
+            </summary>
+        </member>
+        <member name="P:LongRunningWebAPI.WeatherForecast.TemperatureF">
+            <summary>
+            Temperature in F
+            </summary>
+        </member>
+        <member name="P:LongRunningWebAPI.WeatherForecast.Summary">
+            <summary>
+            Forecast Summary
+            </summary>
+        </member>
+    </members>
+</doc>

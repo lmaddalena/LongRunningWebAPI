@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "T2yU84G4KMthOGaYFRHilJgRsO/up3kgkAQDj1Dwk00=",
+  "Source": "LongRunningWebAPI",
+  "BasePath": "_content/LongRunningWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
